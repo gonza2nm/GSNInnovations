@@ -1,0 +1,13 @@
+{
+  "NavBar":{
+    "button":"Contactanos",
+    "about":"Sobre nosotros",
+    "projects":"Proyectos"
+  },
+  "Index":{
+    "title": "Hola Mundo"
+  },
+  "About":{
+    "title": "Sobre Nosotros"
+  } 
+}
