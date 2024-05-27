@@ -1,0 +1,32 @@
+/*Mobile first*/
+* {
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+  box-sizing: border-box;
+  color: var(--white);
+}
+:root {
+  --background: #000000;
+  --white: #eeeeee;
+  --intenseRed: #ff0000;
+  --interRed: #950101;
+  --darkRed: #3d0000;
+}
+body {
+  background-color: var(--background);
+}
+.image-bg-container {
+  width: 100%;
+}
+.data-container {
+  position: relative;
+  z-index: 100;
+}
+
+/*Media query para desktop*/
+@media (min-width: 600px) {
+  body {
+    background-color: var(--interRed);
+  }
+}

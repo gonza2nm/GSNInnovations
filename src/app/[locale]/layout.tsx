@@ -1,6 +1,8 @@
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import NavBar from '@/app/components/NavBar.tsx';
+import '@/app/styles/globals.css';
+import { poppins } from '../fonts.ts';
 
 export default async function LocaleLayout({
   children,
@@ -15,10 +17,10 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body>
+      <body className={poppins.className}>
         <NextIntlClientProvider messages={messages}>
           <NavBar />
-          {children}
+          <main>{children}</main>
         </NextIntlClientProvider>
       </body>
     </html>
