@@ -1,6 +1,7 @@
 {
   "NavBar":{
     "button":"Contact us",
+    "home":"Home",
     "about":"About",
     "projects":"Projects"
   },
