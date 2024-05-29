@@ -1,13 +1,14 @@
 import { useTranslations } from 'next-intl';
-import ImageSlider from '../components/index/ImageSlider.tsx';
+import styles from '@/app/styles/index.module.css';
+import MainInfo from '../components/index/MainInfo.tsx';
+import AboutSection from '../components/index/AboutSection.tsx';
 
 export default function Index() {
   const t = useTranslations('Index');
   return (
-    <div>
-      <ImageSlider>
-        <h1>Sixto y Gonza Title</h1>
-      </ImageSlider>
-    </div>
+    <main className={styles.img_data_container}>
+      <MainInfo />
+      <AboutSection />
+    </main>
   );
 }

@@ -7,7 +7,7 @@
   color: var(--white);
 }
 :root {
-  --background: #000000;
+  --background: #202020;
   --white: #eeeeee;
   --intenseRed: #ff0000;
   --interRed: #950101;
@@ -16,17 +16,18 @@
 body {
   background-color: var(--background);
 }
-.image-bg-container {
+#header {
   width: 100%;
-}
-.data-container {
-  position: relative;
-  z-index: 100;
+  height: 56px;
 }
 
 /*Media query para desktop*/
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   body {
-    background-color: var(--interRed);
+    background-color: var(--background);
+  }
+  #header {
+    width: 100%;
+    height: 70px;
   }
 }
