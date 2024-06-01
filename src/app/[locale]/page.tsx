@@ -1,14 +1,19 @@
 import { useTranslations } from 'next-intl';
-import styles from '@/app/styles/index.module.css';
-import MainInfo from '../components/MainInfo.tsx';
-import AboutSection from '../components/AboutSection.tsx';
+import Home from '../components/sections/Home.tsx';
+import About from '../components/sections/About.tsx';
+import Services from '../components/sections/Services.tsx';
+import Portfolio from '../components/sections/Portfolio.tsx';
+import Contact from '../components/sections/Contact.tsx';
 
-export default function Index() {
-  const t = useTranslations('Index');
+export default function Page() {
+  const t = useTranslations('Main');
   return (
-    <main className={styles.img_data_container}>
-      <MainInfo />
-      <AboutSection />
+    <main>
+      <Home />
+      <About />
+      <Services />
+      <Portfolio />
+      <Contact />
     </main>
   );
 }

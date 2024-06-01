@@ -1,14 +1,42 @@
 {
   "NavBar":{
-    "button":"Contactanos",
     "home":"Inicio",
-    "about":"Sobre nosotros",
-    "projects":"Proyectos"
+    "about":"Sobre Nosotros",
+    "portfolio": "Portafolio",
+    "services":"Nuestros Servicios",
+    "main_button":"Contactanos"
   },
-  "Index":{
-    "title": "Hola Mundo"
+  "Home":{
+    "name": "GSN Innovations",
+    "slogan":"We Listen, We Understand, We Solve Your Software Challenges",
+    "description":"GSN Innovations is a web development group that specializes in creating modern, responsive, and user-friendly web applications.",
+    "main_button":"Contactanos",
+    "secondary_button":"Mirar Portafolio"
   },
   "About":{
-    "title": "Sobre Nosotros"
-  } 
+    "title":"Quienes Somos",
+    "description":"GSN Innovations is a web development group that specializes in creating modern, responsive, and user-friendly web applications.Our team of experts is passionate about using the latest technologies to deliver exceptional results for our clients.",
+    "features":[
+      {"title":"Expertise","Description":"Our team has extensive experience in web development, using technologies like Typescript, Javascript, Google Cloud, Next.js, React, HTML, CSS, Node.js, MongoDB, and MySQL."},
+      {"title":"Approach","Description":"We follow a user-centric approach, focusing on creating intuitive and engaging user experiences. Our process involves close collaboration with our clients to ensure we deliver solutions that meet their unique needs."}, 
+      {"title":"Commitment","Description":"We are committed to delivering high-quality work and providing exceptional customer service. Our goal is to build long-term partnerships with our clients and help them achieve their business objectives."}
+    ]
+  },
+  "Services":{
+    "title":"Our Services",
+    "description":"GSN Innovations offers a wide range of web application development services to help our clients achieve their goals. From custom web application development to website design and maintenance, we have the expertise to deliver exceptional results.",
+    "strengths":[
+      {"title":"Custom Web Application Development","desciption":"We build custom web applications tailored to your specific needs, using the latest technologies and best practices."},
+      {"title":"Web Application Design","desciption":"Our team of designers create visually appealing and user-friendly designs that enhance the overall user experience."},
+      {"title":"Web Application Maintenance","desciption":"We provide ongoing maintenance and support to ensure your web application remains up-to-date, secure, and optimized for performance."}           
+    ]
+  },
+  "Portfolio":{
+    "title":"Our Portfolio",
+    "description":"Check out some of the web applications we've developed for our clients."
+  },
+  "Contact":{
+    "title":"Get in Touch",
+    "description":"Have a web application project in mind? Let's discuss how we can help. Fill out the form below and one of our team members will get back to you."
+  }
 }

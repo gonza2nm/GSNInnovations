@@ -1,37 +1,36 @@
 'use client';
 import { useTranslations } from 'next-intl';
-import Link from 'next/link';
 import { useParams } from 'next/navigation';
 import { useState } from 'react';
 import styles from '@/app/styles/NavBar.module.css';
-import BurguerButton from './BurguerButton.tsx';
+import MenuIcon from './icons/MenuIcon.tsx';
+import CloseMenu from './icons/CloseMenu.tsx';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const handleClick = () => {
-    setIsOpen(!isOpen);
-  };
-  const params = useParams<{ locale: string }>();
   const t = useTranslations('NavBar');
-  const { locale } = params;
   return (
-    <header id="header">
-      <nav className={styles.navbar}>
-        <div>
-          <a className={styles.no_styles_link} href="#">
-            Logo
-          </a>
-        </div>
+    <header id={styles.header}>
+      <nav className={`${styles.nav} ${isOpen ? styles.nav_open : ''}`}>
+        <a className={styles.logo + ' ' + styles.no_styles_link} href="#home">
+          GSN Innovations
+        </a>
         <ul
           className={
-            isOpen
-              ? `${styles.nav_list} ${styles.active}`
-              : `${styles.nav_list}`
+            isOpen ? `${styles.ul_nav} ${styles.active}` : `${styles.ul_nav}`
           }
         >
-          <li className={styles.nav_link}>
+          <li className={styles.close_btn_container}>
+            <CloseMenu
+              className={styles.close_btn}
+              close={() => {
+                setIsOpen(false);
+              }}
+            />
+          </li>
+          <li className={styles.li_links}>
             <a
-              className={styles.no_styles_link}
+              className={styles.no_styles_link + ' ' + styles.link}
               href="#"
               onClick={() => {
                 setIsOpen(false);
@@ -40,9 +39,9 @@ const NavBar = () => {
               {t('home')}
             </a>
           </li>
-          <li className={styles.nav_link}>
+          <li className={styles.li_links}>
             <a
-              className={styles.no_styles_link}
+              className={styles.no_styles_link + ' ' + styles.link}
               href="#"
               onClick={() => {
                 setIsOpen(false);
@@ -51,39 +50,43 @@ const NavBar = () => {
               {t('about')}
             </a>
           </li>
-          <li className={styles.nav_link}>
+          <li className={styles.li_links}>
             <a
-              className={styles.no_styles_link}
+              className={styles.no_styles_link + ' ' + styles.link}
               href="#"
               onClick={() => {
                 setIsOpen(false);
               }}
             >
-              {t('projects')}
+              {t('services')}
             </a>
           </li>
-          {isOpen && (
-            <li
-              className={`${styles.nav_link} ${styles.btn_burguer}`}
+          <li className={styles.li_links}>
+            <a
+              className={styles.no_styles_link + ' ' + styles.link}
+              href="#"
               onClick={() => {
                 setIsOpen(false);
               }}
             >
-              <a className={styles.btn_container} href="#">
-                <button className={styles.nav_btn} type="button">
-                  {t('button')}
-                </button>
-              </a>
-            </li>
-          )}
+              {t('portfolio')}
+            </a>
+          </li>
+          <li className={''}>
+            <a className={''} href="#">
+              <button className={styles.nav_btn} type="button">
+                {t('main_button')}
+              </button>
+            </a>
+          </li>
         </ul>
-        <div className={styles.nav_btn_container}>
-          <a className={styles.btn_container} href="#">
-            <button className={styles.nav_btn} type="button">
-              {t('button')}
-            </button>
-          </a>
-          <BurguerButton isOpen={isOpen} handleClick={handleClick} />
+        <div className={''}>
+          <MenuIcon
+            isOpen={isOpen}
+            open={() => {
+              setIsOpen(true);
+            }}
+          />
         </div>
       </nav>
     </header>

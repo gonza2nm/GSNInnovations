@@ -1,31 +1,19 @@
 {
   "NavBar":{
-    "button":"Contact us",
-    "home":"Home",
-    "about":"About",
-    "projects":"Projects"
-  },
-  "Index":{
-    "title": "Hello World"
-  },
-  "About":{
-    "title": "About"
-  },
-  "Nuevo":{
-    "name": "GSN Innovations",
-    "slogan":"We Listen, We Understand, We Solve Your Software Challenges",
-    "description":"GSN Innovations is a web development group that specializes in creating modern, responsive, and user-friendly web applications.",
-    "main_button":"Contact Us",
-    "secondary_button":"View Portfolio"
-  },
-  "new_NavBar":{
     "home":"Home",
     "about":"About Us",
     "portfolio": "Portfolio",
     "services":"Our Sevices",
     "main_button":"Contact Us"
   },
-  "About_Us":{
+  "Main":{
+    "name": "GSN Innovations",
+    "slogan":"We Listen, We Understand, We Solve Your Software Challenges",
+    "description":"GSN Innovations is a web development group that specializes in creating modern, responsive, and user-friendly web applications.",
+    "main_button":"Contact Us",
+    "secondary_button":"View Portfolio"
+  },
+  "AboutUs":{
     "title":"Who We Are",
     "description":"GSN Innovations is a web development group that specializes in creating modern, responsive, and user-friendly web applications.Our team of experts is passionate about using the latest technologies to deliver exceptional results for our clients.",
     "features":[
@@ -34,7 +22,7 @@
       {"title":"Commitment","Description":"We are committed to delivering high-quality work and providing exceptional customer service. Our goal is to build long-term partnerships with our clients and help them achieve their business objectives."}
     ]
   },
-  "Our_Services":{
+  "OurServices":{
     "title":"Our Services",
     "description":"GSN Innovations offers a wide range of web application development services to help our clients achieve their goals. From custom web application development to website design and maintenance, we have the expertise to deliver exceptional results.",
     "strengths":[
@@ -43,7 +31,7 @@
       {"title":"Web Application Maintenance","desciption":"We provide ongoing maintenance and support to ensure your web application remains up-to-date, secure, and optimized for performance."}           
     ]
   },
-  "Our_Portfolio":{
+  "OurPortfolio":{
     "title":"Our Portfolio",
     "description":"Check out some of the web applications we've developed for our clients."
   },

@@ -1,33 +1,15 @@
-/*Mobile first*/
-* {
-  padding: 0;
-  margin: 0;
-  font-size: 16px;
-  box-sizing: border-box;
-  color: var(--white);
-}
 :root {
-  --background: #202020;
-  --white: #eeeeee;
-  --intenseRed: #ff0000;
-  --interRed: #950101;
-  --darkRed: #3d0000;
+  --backgroundColor: #111827;
+  --contrastWhite: #171717;
+  --descriptionColor: #6b7280;
+  --white: #f9fafb;
+  --contastBackground: #9ca3af;
+  --hoverBtn: #2563eb;
+  --darkBlue: #032d97;
+  --intenseBlue: #0110af;
 }
-body {
-  background-color: var(--background);
-}
-#header {
-  width: 100%;
-  height: 56px;
-}
-
-/*Media query para desktop*/
-@media (min-width: 768px) {
-  body {
-    background-color: var(--background);
-  }
-  #header {
-    width: 100%;
-    height: 70px;
-  }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }

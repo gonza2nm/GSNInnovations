@@ -2,9 +2,10 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import NavBar from '@/app/components/NavBar.tsx';
 import '@/app/styles/globals.css';
-import { poppins } from '../fonts.ts';
+import { gabarito } from '@/app/fonts.ts';
 import { Metadata } from 'next';
-import Footer from '../components/Footer.tsx';
+import Footer from '@/app/components/Footer.tsx';
+import '@/app/styles/globals.css';
 
 export const metadata: Metadata = {
   title: 'GSN Innovations',
@@ -42,7 +43,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body className={poppins.className}>
+      <body className={gabarito.className}>
         <NextIntlClientProvider messages={messages}>
           <NavBar />
           {children}
