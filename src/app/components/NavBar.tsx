@@ -1,6 +1,5 @@
 'use client';
 import { useTranslations } from 'next-intl';
-import { useParams } from 'next/navigation';
 import { useState } from 'react';
 import styles from '@/app/styles/NavBar.module.css';
 import MenuIcon from './icons/MenuIcon.tsx';
@@ -28,10 +27,11 @@ const NavBar = () => {
               }}
             />
           </li>
+
           <li className={styles.li_links}>
             <a
-              className={styles.no_styles_link + ' ' + styles.link}
-              href="#"
+              className={`${styles.no_styles_link} ${styles.link}`}
+              href="#home"
               onClick={() => {
                 setIsOpen(false);
               }}
@@ -41,8 +41,8 @@ const NavBar = () => {
           </li>
           <li className={styles.li_links}>
             <a
-              className={styles.no_styles_link + ' ' + styles.link}
-              href="#"
+              className={`${styles.no_styles_link} ${styles.link}`}
+              href="#about"
               onClick={() => {
                 setIsOpen(false);
               }}
@@ -52,8 +52,8 @@ const NavBar = () => {
           </li>
           <li className={styles.li_links}>
             <a
-              className={styles.no_styles_link + ' ' + styles.link}
-              href="#"
+              className={`${styles.no_styles_link} ${styles.link}`}
+              href="#services"
               onClick={() => {
                 setIsOpen(false);
               }}
@@ -63,8 +63,8 @@ const NavBar = () => {
           </li>
           <li className={styles.li_links}>
             <a
-              className={styles.no_styles_link + ' ' + styles.link}
-              href="#"
+              className={`${styles.no_styles_link} ${styles.link}`}
+              href="#portfolio"
               onClick={() => {
                 setIsOpen(false);
               }}
@@ -72,17 +72,22 @@ const NavBar = () => {
               {t('portfolio')}
             </a>
           </li>
-          <li className={''}>
-            <a className={''} href="#">
-              <button className={styles.nav_btn} type="button">
+          <li className={styles.li_links}>
+            <a
+              href="#contact"
+              onClick={() => {
+                setIsOpen(false);
+              }}
+            >
+              <button className={styles.btn} type="button">
                 {t('main_button')}
               </button>
             </a>
           </li>
         </ul>
-        <div className={''}>
+        <div className={styles.menu_btn_container}>
           <MenuIcon
-            isOpen={isOpen}
+            className={styles.menu_btn}
             open={() => {
               setIsOpen(true);
             }}
