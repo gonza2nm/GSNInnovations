@@ -1,17 +1,15 @@
 {
   "NavBar":{
-    "home":"Inicio",
     "about":"Sobre Nosotros",
     "portfolio": "Portafolio",
     "services":"Nuestros Servicios",
     "main_button":"Contactanos"
   },
   "Home":{
-    "name": "GSN Innovations",
     "slogan":"We Listen, We Understand, We Solve Your Software Challenges",
     "description":"GSN Innovations is a web development group that specializes in creating modern, responsive, and user-friendly web applications.",
-    "main_button":"Contactanos",
-    "secondary_button":"Mirar Portafolio"
+    "first_btn":"Contactanos",
+    "second_btn":"Mirar Portafolio"
   },
   "About":{
     "title":"Quienes Somos",

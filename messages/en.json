@@ -1,19 +1,17 @@
 {
   "NavBar":{
-    "home":"Home",
     "about":"About Us",
     "portfolio": "Portfolio",
     "services":"Our Sevices",
     "main_button":"Contact Us"
   },
-  "Main":{
-    "name": "GSN Innovations",
+  "Home":{
     "slogan":"We Listen, We Understand, We Solve Your Software Challenges",
     "description":"GSN Innovations is a web development group that specializes in creating modern, responsive, and user-friendly web applications.",
-    "main_button":"Contact Us",
-    "secondary_button":"View Portfolio"
+    "first_btn":"Contact Us",
+    "second_btn":"View Portfolio"
   },
-  "AboutUs":{
+  "About":{
     "title":"Who We Are",
     "description":"GSN Innovations is a web development group that specializes in creating modern, responsive, and user-friendly web applications.Our team of experts is passionate about using the latest technologies to deliver exceptional results for our clients.",
     "features":[
@@ -22,7 +20,7 @@
       {"title":"Commitment","Description":"We are committed to delivering high-quality work and providing exceptional customer service. Our goal is to build long-term partnerships with our clients and help them achieve their business objectives."}
     ]
   },
-  "OurServices":{
+  "Services":{
     "title":"Our Services",
     "description":"GSN Innovations offers a wide range of web application development services to help our clients achieve their goals. From custom web application development to website design and maintenance, we have the expertise to deliver exceptional results.",
     "strengths":[
@@ -31,7 +29,7 @@
       {"title":"Web Application Maintenance","desciption":"We provide ongoing maintenance and support to ensure your web application remains up-to-date, secure, and optimized for performance."}           
     ]
   },
-  "OurPortfolio":{
+  "Portfolio":{
     "title":"Our Portfolio",
     "description":"Check out some of the web applications we've developed for our clients."
   },

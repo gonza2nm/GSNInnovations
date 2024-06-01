@@ -2,7 +2,7 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import NavBar from '@/app/components/NavBar.tsx';
 import '@/app/styles/globals.css';
-import { gabarito } from '@/app/fonts.ts';
+import { rubik } from '@/app/fonts.ts';
 import { Metadata } from 'next';
 import Footer from '@/app/components/Footer.tsx';
 import '@/app/styles/globals.css';
@@ -43,7 +43,7 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
-      <body className={gabarito.className}>
+      <body className={rubik.className}>
         <NextIntlClientProvider messages={messages}>
           <NavBar />
           {children}

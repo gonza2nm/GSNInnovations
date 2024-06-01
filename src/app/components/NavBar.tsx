@@ -1,7 +1,7 @@
 'use client';
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
-import styles from '@/app/styles/NavBar.module.css';
+import styles from '@/app/styles/navbar.module.css';
 import MenuIcon from './icons/MenuIcon.tsx';
 import CloseMenu from './icons/CloseMenu.tsx';
 
@@ -26,18 +26,6 @@ const NavBar = () => {
                 setIsOpen(false);
               }}
             />
-          </li>
-
-          <li className={styles.li_links}>
-            <a
-              className={`${styles.no_styles_link} ${styles.link}`}
-              href="#home"
-              onClick={() => {
-                setIsOpen(false);
-              }}
-            >
-              {t('home')}
-            </a>
           </li>
           <li className={styles.li_links}>
             <a
