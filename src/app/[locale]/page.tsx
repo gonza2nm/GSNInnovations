@@ -1,7 +1,7 @@
 import { useTranslations } from 'next-intl';
 import styles from '@/app/styles/index.module.css';
-import MainInfo from '../components/index/MainInfo.tsx';
-import AboutSection from '../components/index/AboutSection.tsx';
+import MainInfo from '../components/MainInfo.tsx';
+import AboutSection from '../components/AboutSection.tsx';
 
 export default function Index() {
   const t = useTranslations('Index');

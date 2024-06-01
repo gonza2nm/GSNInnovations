@@ -18,9 +18,9 @@ const NavBar = () => {
     <header id="header">
       <nav className={styles.navbar}>
         <div>
-          <Link className={styles.no_styles_link} href={`/${locale}`}>
+          <a className={styles.no_styles_link} href="#">
             Logo
-          </Link>
+          </a>
         </div>
         <ul
           className={
@@ -30,37 +30,37 @@ const NavBar = () => {
           }
         >
           <li className={styles.nav_link}>
-            <Link
+            <a
               className={styles.no_styles_link}
-              href={`/${locale}`}
+              href="#"
               onClick={() => {
                 setIsOpen(false);
               }}
             >
               {t('home')}
-            </Link>
+            </a>
           </li>
           <li className={styles.nav_link}>
-            <Link
+            <a
               className={styles.no_styles_link}
-              href={`/${locale}/about`}
+              href="#"
               onClick={() => {
                 setIsOpen(false);
               }}
             >
               {t('about')}
-            </Link>
+            </a>
           </li>
           <li className={styles.nav_link}>
-            <Link
+            <a
               className={styles.no_styles_link}
-              href={`/${locale}/projects`}
+              href="#"
               onClick={() => {
                 setIsOpen(false);
               }}
             >
               {t('projects')}
-            </Link>
+            </a>
           </li>
           {isOpen && (
             <li
@@ -69,20 +69,20 @@ const NavBar = () => {
                 setIsOpen(false);
               }}
             >
-              <Link className={styles.btn_container} href={`/${locale}/about`}>
+              <a className={styles.btn_container} href="#">
                 <button className={styles.nav_btn} type="button">
                   {t('button')}
                 </button>
-              </Link>
+              </a>
             </li>
           )}
         </ul>
         <div className={styles.nav_btn_container}>
-          <Link className={styles.btn_container} href={`/${locale}/about`}>
+          <a className={styles.btn_container} href="#">
             <button className={styles.nav_btn} type="button">
               {t('button')}
             </button>
-          </Link>
+          </a>
           <BurguerButton isOpen={isOpen} handleClick={handleClick} />
         </div>
       </nav>
