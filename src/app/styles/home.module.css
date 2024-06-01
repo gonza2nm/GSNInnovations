@@ -73,21 +73,43 @@
 }
 .nd_btn {
   text-decoration: none;
-  text-align: center;
+  justify-content: center;
   display: flex;
   align-items: center;
   background-color: var(--white);
-  color: var(--white);
+  color: var(--backgroundColor);
   cursor: pointer;
   transition: all 0.2s ease-in-out;
   border: 1px solid var(--backgroundColor);
 }
-.nd_btn:hover {
-  color: var(--backgroundColor);
-}
 
 @media (min-width: 768px) {
   .home_container {
-    padding: 96px 16px;
+    padding: 96px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 40px;
+  }
+  .info {
+    flex: 1;
+    min-width: 300px;
+  }
+  .img_container {
+    flex: 1;
+    min-width: 400px;
+  }
+  .nd_btn {
+    color: var(--white);
+  }
+  .nd_btn:hover {
+    color: var(--backgroundColor);
+  }
+}
+@media (min-width: 1400px) {
+  .info,
+  .img_container {
+    flex: 0 0 650px;
   }
 }

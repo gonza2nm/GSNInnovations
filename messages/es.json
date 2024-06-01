@@ -12,13 +12,12 @@
     "second_btn":"Mirar Portafolio"
   },
   "About":{
+    "section":"Sobre Nosotros",
     "title":"Quienes Somos",
     "description":"GSN Innovations is a web development group that specializes in creating modern, responsive, and user-friendly web applications.Our team of experts is passionate about using the latest technologies to deliver exceptional results for our clients.",
-    "features":[
-      {"title":"Expertise","Description":"Our team has extensive experience in web development, using technologies like Typescript, Javascript, Google Cloud, Next.js, React, HTML, CSS, Node.js, MongoDB, and MySQL."},
-      {"title":"Approach","Description":"We follow a user-centric approach, focusing on creating intuitive and engaging user experiences. Our process involves close collaboration with our clients to ensure we deliver solutions that meet their unique needs."}, 
-      {"title":"Commitment","Description":"We are committed to delivering high-quality work and providing exceptional customer service. Our goal is to build long-term partnerships with our clients and help them achieve their business objectives."}
-    ]
+    "title1":"Expertise","description1":"Our team has extensive experience in web development, using technologies like Typescript, Javascript, Google Cloud, Next.js, React, HTML, CSS, Node.js, MongoDB, and MySQL.",
+    "title2":"Approach","description2":"We follow a user-centric approach, focusing on creating intuitive and engaging user experiences. Our process involves close collaboration with our clients to ensure we deliver solutions that meet their unique needs.", 
+    "title3":"Commitment","description3":"We are committed to delivering high-quality work and providing exceptional customer service. Our goal is to build long-term partnerships with our clients and help them achieve their business objectives."
   },
   "Services":{
     "title":"Our Services",
