@@ -1,3 +1,4 @@
+'use client';
 import { useTranslations } from 'next-intl';
 import React from 'react';
 import styles from '@/app/styles/home.module.css';
@@ -15,9 +16,11 @@ const Home = () => {
         </h1>
         <p className={styles.description}>{t('description')}</p>
         <div className={styles.btns_container}>
-          <button className={`${styles.btn} ${styles.st_btn}`}>
-            {t('first_btn')}
-          </button>
+          <a href="#contact">
+            <button className={`${styles.btn} ${styles.st_btn}`} type="button">
+              {t('first_btn')}
+            </button>
+          </a>
           <a className={`${styles.btn} ${styles.nd_btn}`} href="#portfolio">
             {t('second_btn')}
           </a>

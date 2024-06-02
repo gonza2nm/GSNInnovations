@@ -1,8 +1,9 @@
 import React from 'react';
 
-const LinkedInSVG = () => {
+const LinkedInSVG = ({ className }: { className: string }) => {
   return (
     <svg
+      className={className}
       width="16px"
       height="16px"
       viewBox="0 0 24 24"

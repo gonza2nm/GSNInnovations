@@ -1,6 +1,7 @@
 :root {
   --backgroundColor: #111827;
   --contrastWhite: #171717;
+  --greyBorder: #d1cece;
   --descriptionColor: #6b7280;
   --white: #f9fafb;
   --contastBackground: #9ca3af;
@@ -12,4 +13,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+html {
+  scroll-padding-top: 60px;
+  scroll-behavior: smooth;
 }

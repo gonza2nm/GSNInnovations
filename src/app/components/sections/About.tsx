@@ -17,7 +17,6 @@ const About = () => {
         </h2>
         <p className={styles.desc}>{t('description')}</p>
       </div>
-
       <div className={styles.extra_info}>
         <div className={styles.profile_container}>
           <div className={styles.profile}>
@@ -31,15 +30,23 @@ const About = () => {
             <div className={styles.data_profile}>
               <div className={styles.name}>Gonzalo Mansilla</div>
               <p className={styles.profesion}>{t('profesionG')}</p>
-              <div className={styles.contact_container}>
-                <div>
-                  <EmailSVG />
-                  <button>Contact</button>
-                </div>
-                <div>
-                  <LinkedInSVG />
-                  <button>LinkedIn</button>
-                </div>
+            </div>
+            <div className={styles.contact_container}>
+              <div className={styles.btn_contact_container}>
+                <EmailSVG className={styles.svg} />
+                <a className={styles.btn_contact} href="" target="_blank">
+                  Contact
+                </a>
+              </div>
+              <div className={styles.btn_in_container}>
+                <LinkedInSVG className={styles.svg} />
+                <a
+                  className={styles.btn_linkedin}
+                  href="https://www.linkedin.com/in/gmansilla-se-utn/"
+                  target="_blank"
+                >
+                  LinkedIn
+                </a>
               </div>
             </div>
           </div>
@@ -55,32 +62,42 @@ const About = () => {
             <div className={styles.data_profile}>
               <div className={styles.name}>Sixto Cabrera</div>
               <p className={styles.profesion}>{t('profesionS')}</p>
-              <div className={styles.contact_container}>
-                <div>
-                  <EmailSVG />
-                  <button>Contact</button>
-                </div>
-                <div>
-                  <LinkedInSVG />
-                  <button>LinkedIn</button>
-                </div>
+            </div>
+            <div className={styles.contact_container}>
+              <div className={styles.btn_contact_container}>
+                <EmailSVG className={styles.svg} />
+                <a className={styles.btn_contact} href="" target="_blank">
+                  Contact
+                </a>
+              </div>
+              <div className={styles.btn_in_container}>
+                <LinkedInSVG className={styles.svg} />
+                <a className={styles.btn_linkedin} href="" target="_blank">
+                  LinkedIn
+                </a>
               </div>
             </div>
           </div>
         </div>
 
-        <div>
-          <div>
-            <h3>{t('title1')}</h3>
-            <p>{t('description1')}</p>
+        <div className={styles.info_container}>
+          <div className={styles.partition_info}>
+            <h3 className={`${gabarito.className} ${styles.p_title}`}>
+              {t('title1')}
+            </h3>
+            <p className={styles.p_desc}>{t('description1')}</p>
           </div>
-          <div>
-            <h3>{t('title2')}</h3>
-            <p>{t('description2')}</p>
+          <div className={styles.partition_info}>
+            <h3 className={`${gabarito.className} ${styles.p_title}`}>
+              {t('title2')}
+            </h3>
+            <p className={styles.p_desc}>{t('description2')}</p>
           </div>
-          <div>
-            <h3>{t('title3')}</h3>
-            <p>{t('description3')}</p>
+          <div className={styles.partition_info}>
+            <h3 className={`${gabarito.className} ${styles.p_title}`}>
+              {t('title3')}
+            </h3>
+            <p className={styles.p_desc}>{t('description3')}</p>
           </div>
         </div>
       </div>
