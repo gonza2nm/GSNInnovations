@@ -1,0 +1,67 @@
+.about_container {
+  margin-top: 48px;
+  padding: 0 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  text-align: center;
+}
+.are {
+  font-size: 14px;
+}
+.title {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 8px;
+}
+.desc {
+  margin-top: 8px;
+  font-size: 16px;
+  color: var(--descriptionColor);
+}
+.extra_info {
+  padding: 48px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.profile_container {
+  width: 100%;
+  display: flex;
+  gap: 30px;
+  align-items: flex-start;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.profile {
+  max-width: 270px;
+  border-radius: 10px;
+  min-height: 350px;
+  border: 1px solid #d1d0d0;
+}
+.img_profile {
+  border-radius: 50%;
+  object-fit: cover;
+}
+.data_profile {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.name {
+  font-size: 18px;
+  font-weight: bold;
+}
+.profesion {
+  font-size: 16px;
+}
+@media (min-width: 768px) {
+}

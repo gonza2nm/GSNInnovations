@@ -14,6 +14,8 @@
   "About":{
     "section":"About Us",
     "title":"Who We Are",
+    "profesionS":"Back-end Developer",
+    "profesionG":"Front-end Developer & Future System Analyst",
     "description":"GSN Innovations is a web development group that specializes in creating modern, responsive, and user-friendly web applications.Our team of experts is passionate about using the latest technologies to deliver exceptional results for our clients.",
     "title1":"Expertise",
     "description1":"Our team has extensive experience in web development, using technologies like Typescript, Javascript, Google Cloud, Next.js, React, HTML, CSS, Node.js, MongoDB, and MySQL.",
@@ -25,11 +27,12 @@
   "Services":{
     "title":"Our Services",
     "description":"GSN Innovations offers a wide range of web application development services to help our clients achieve their goals. From custom web application development to website design and maintenance, we have the expertise to deliver exceptional results.",
-    "strengths":[
-      {"title":"Custom Web Application Development","desciption":"We build custom web applications tailored to your specific needs, using the latest technologies and best practices."},
-      {"title":"Web Application Design","desciption":"Our team of designers create visually appealing and user-friendly designs that enhance the overall user experience."},
-      {"title":"Web Application Maintenance","desciption":"We provide ongoing maintenance and support to ensure your web application remains up-to-date, secure, and optimized for performance."}           
-    ]
+    "strengths1":"Custom Web Application Development",
+    "desciption1":"We build custom web applications tailored to your specific needs, using the latest technologies and best practices.",
+    "strengths2":"Web Application Design",
+    "desciption2":"Our team of designers create visually appealing and user-friendly designs that enhance the overall user experience.",
+    "strengths3":"Web Application Maintenance",
+    "desciption3":"We provide ongoing maintenance and support to ensure your web application remains up-to-date, secure, and optimized for performance."           
   },
   "Portfolio":{
     "title":"Our Portfolio",
