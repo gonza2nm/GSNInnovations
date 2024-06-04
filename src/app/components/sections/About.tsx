@@ -22,7 +22,7 @@ const About = () => {
           <div className={styles.profile}>
             <Image
               className={styles.img_profile}
-              src={'/images/gonza.jpg'}
+              src={'/gonza.jpg'}
               alt="profile"
               width={'128'}
               height={'128'}
@@ -34,7 +34,11 @@ const About = () => {
             <div className={styles.contact_container}>
               <div className={styles.btn_contact_container}>
                 <EmailSVG className={styles.svg} />
-                <a className={styles.btn_contact} href="" target="_blank">
+                <a
+                  className={styles.btn_contact}
+                  target="_blank"
+                  href="mailto:gonzalo2nm@gmail.com?subject=Question&body=Hello,%20I%20would%20like%20to%20get%20information%20about..."
+                >
                   Contact
                 </a>
               </div>
@@ -54,7 +58,7 @@ const About = () => {
           <div className={styles.profile}>
             <Image
               className={styles.img_profile}
-              src={'/images/fotoCeleste.jpg'}
+              src={'/fotoCeleste.jpg'}
               alt=""
               width={'128'}
               height={'128'}
@@ -66,13 +70,21 @@ const About = () => {
             <div className={styles.contact_container}>
               <div className={styles.btn_contact_container}>
                 <EmailSVG className={styles.svg} />
-                <a className={styles.btn_contact} href="" target="_blank">
+                <a
+                  className={styles.btn_contact}
+                  target="_blank"
+                  href="mailto:six_cabre@outlook.com?subject=Question&body=Hello,%20I%20would%20like%20to%20get%20information%20about..."
+                >
                   Contact
                 </a>
               </div>
               <div className={styles.btn_in_container}>
                 <LinkedInSVG className={styles.svg} />
-                <a className={styles.btn_linkedin} href="" target="_blank">
+                <a
+                  className={styles.btn_linkedin}
+                  href="https://www.linkedin.com/in/sixto-cabrera-snctech/"
+                  target="_blank"
+                >
                   LinkedIn
                 </a>
               </div>

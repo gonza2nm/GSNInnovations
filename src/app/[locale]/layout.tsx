@@ -6,9 +6,11 @@ import { rubik } from '@/app/fonts.ts';
 import { Metadata } from 'next';
 import Footer from '@/app/components/Footer.tsx';
 import '@/app/styles/globals.css';
+import Head from 'next/head';
 
 export const metadata: Metadata = {
   title: 'GSN Innovations',
+  icons: '/favicon.ico',
   description: 'Primera descripcion con metadata',
   authors: [{ name: 'GSN Innovations', url: '/' }],
   keywords: [
@@ -43,6 +45,9 @@ export default async function LocaleLayout({
 
   return (
     <html lang={locale}>
+      <Head>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <body className={rubik.className}>
         <NextIntlClientProvider messages={messages}>
           <NavBar />

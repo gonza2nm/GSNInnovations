@@ -4,7 +4,7 @@ import React from 'react';
 import styles from '@/app/styles/home.module.css';
 import Image from 'next/image';
 import { gabarito } from '@/app/fonts.ts';
-import photo1 from '@/../public/images/fotoPaisaje.jpg';
+import photo1 from '@/../public/fotoPaisaje.jpg';
 
 const Home = () => {
   const t = useTranslations('Home');
