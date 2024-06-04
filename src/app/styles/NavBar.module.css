@@ -89,7 +89,7 @@
   border: 1px solid var(--hoverBtn);
 }
 .btn:hover {
-  box-shadow: 0px 0px 30px var(--darkBlue);
+  box-shadow: 0px 0px 20px var(--darkBlue);
   background-color: var(--darkBlue);
 }
 .menu_btn {
