@@ -19,8 +19,11 @@ const Contact = () => {
             <div>
               <label className={styles.label} htmlFor="name">
                 {t('name')}
+                <span className={styles.red}> *</span>
               </label>
               <input
+                autoComplete="name"
+                required
                 className={styles.input}
                 id="name"
                 placeholder={t('pName')}
@@ -30,8 +33,11 @@ const Contact = () => {
             <div>
               <label className={styles.label} htmlFor="email">
                 {t('email')}
+                <span className={styles.red}> *</span>
               </label>
               <input
+                autoComplete="email"
+                required
                 className={styles.input}
                 id="email"
                 type="email"
@@ -42,12 +48,15 @@ const Contact = () => {
           <div className={styles.textarea_container}>
             <label className={styles.label} htmlFor="message">
               {t('message')}
+              <span className={styles.red}> *</span>
             </label>
             <textarea
+              required
               className={styles.textarea}
               id="message"
               rows={5}
               placeholder={t('pMessage')}
+              autoComplete="off"
             ></textarea>
           </div>
           <div className={styles.btn_container}>

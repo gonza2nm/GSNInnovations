@@ -1,7 +1,6 @@
 import Home from '../components/sections/Home.tsx';
 import About from '../components/sections/About.tsx';
 import Services from '../components/sections/Services.tsx';
-import Portfolio from '../components/sections/Portfolio.tsx';
 import Contact from '../components/sections/Contact.tsx';
 
 export default function Page() {
@@ -10,7 +9,6 @@ export default function Page() {
       <Home />
       <About />
       <Services />
-      <Portfolio />
       <Contact />
     </main>
   );

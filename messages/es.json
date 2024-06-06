@@ -42,7 +42,7 @@
     "title": "Ponte en Contacto",
     "description": "¿Tienes un proyecto de aplicación web en mente? Hablemos sobre cómo podemos ayudarte. Llena el formulario a continuación y uno de los miembros de nuestro equipo se pondrá en contacto contigo.",
     "name":"Nombre",
-    "pName":" Ingrese su nombre",
+    "pName":"Ingrese su nombre",
     "email":"Mail",
     "pEmail":"Ingrese su mail",
     "message":"Mensaje",
