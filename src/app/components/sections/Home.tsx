@@ -2,9 +2,7 @@
 import { useTranslations } from 'next-intl';
 import React from 'react';
 import styles from '@/app/styles/home.module.css';
-import Image from 'next/image';
 import { gabarito } from '@/app/fonts.ts';
-import photo1 from '@/../public/fotoPaisaje.jpg';
 import ImgSlider from '../ImgSlider.tsx';
 
 const Home = () => {

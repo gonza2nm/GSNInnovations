@@ -17,7 +17,7 @@ const ImgSlider = ({ className, width, height }: ImgSliderProps) => {
       setIndiceActual(
         (indiceActual) => (indiceActual + 1) % imagenesSVG.length
       );
-    }, 4000);
+    }, 5000);
     return () => clearInterval(intervalo); // Limpia el intervalo al desmontar el componente
   }, []);
 
