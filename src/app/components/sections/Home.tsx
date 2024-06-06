@@ -5,6 +5,7 @@ import styles from '@/app/styles/home.module.css';
 import Image from 'next/image';
 import { gabarito } from '@/app/fonts.ts';
 import photo1 from '@/../public/fotoPaisaje.jpg';
+import ImgSlider from '../ImgSlider.tsx';
 
 const Home = () => {
   const t = useTranslations('Home');
@@ -27,13 +28,7 @@ const Home = () => {
         </div>
       </div>
       <div className={styles.img_container}>
-        <Image
-          className={styles.img}
-          width={'935'}
-          height={'935'}
-          src={photo1}
-          alt=""
-        />
+        <ImgSlider className={styles.img} width={650} height={650} />
       </div>
     </section>
   );

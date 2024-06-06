@@ -45,6 +45,7 @@
     "pName":"Ingrese su nombre",
     "email":"Mail",
     "pEmail":"Ingrese su mail",
+    "subject":"Asunto",
     "message":"Mensaje",
     "pMessage":"Ingrese su mensaje",
     "btn":"Enviar"

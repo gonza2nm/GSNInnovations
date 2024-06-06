@@ -45,19 +45,35 @@ const Contact = () => {
               />
             </div>
           </div>
-          <div className={styles.textarea_container}>
-            <label className={styles.label} htmlFor="message">
-              {t('message')}
-              <span className={styles.red}> *</span>
-            </label>
-            <textarea
-              required
-              className={styles.textarea}
-              id="message"
-              rows={5}
-              placeholder={t('pMessage')}
-              autoComplete="off"
-            ></textarea>
+          <div className={styles.email_container}>
+            <div>
+              <label className={styles.label} htmlFor="subject">
+                {t('subject')}
+                <span className={styles.red}> *</span>
+              </label>
+              <input
+                autoComplete="off"
+                required
+                className={styles.input}
+                id="subject"
+                type="text"
+                placeholder={t('subject')}
+              />
+            </div>
+            <div>
+              <label className={styles.label} htmlFor="message">
+                {t('message')}
+                <span className={styles.red}> *</span>
+              </label>
+              <textarea
+                required
+                className={styles.textarea}
+                id="message"
+                rows={5}
+                placeholder={t('pMessage')}
+                autoComplete="off"
+              ></textarea>
+            </div>
           </div>
           <div className={styles.btn_container}>
             <button className={styles.btn} type="button">

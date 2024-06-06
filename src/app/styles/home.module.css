@@ -58,6 +58,7 @@
   border-radius: 12px;
   object-fit: cover;
   width: 100%;
+  max-width: 500px;
   height: auto;
 }
 .st_btn {
