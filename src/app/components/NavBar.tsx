@@ -51,17 +51,6 @@ const NavBar = () => {
           </li>
           <li className={styles.li_links}>
             <a
-              className={`${styles.no_styles_link} ${styles.link}`}
-              href="#portfolio"
-              onClick={() => {
-                setIsOpen(false);
-              }}
-            >
-              {t('portfolio')}
-            </a>
-          </li>
-          <li className={styles.li_links}>
-            <a
               href="#contact"
               onClick={() => {
                 setIsOpen(false);
@@ -86,3 +75,18 @@ const NavBar = () => {
   );
 };
 export default NavBar;
+
+/*
+agregar cuando este la parte de portafolio
+<li className={styles.li_links}>
+            <a
+              className={`${styles.no_styles_link} ${styles.link}`}
+              href="#portfolio"
+              onClick={() => {
+                setIsOpen(false);
+              }}
+            >
+              {t('portfolio')}
+            </a>
+</li>
+*/
