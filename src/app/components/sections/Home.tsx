@@ -20,9 +20,9 @@ const Home = () => {
               {t('first_btn')}
             </button>
           </a>
-          <a className={`${styles.btn} ${styles.nd_btn}`} href="#portfolio">
+          {/*<a className={`${styles.btn} ${styles.nd_btn}`} href="#portfolio">
             {t('second_btn')}
-          </a>
+          </a>*/}
         </div>
       </div>
       <div className={styles.img_container}>

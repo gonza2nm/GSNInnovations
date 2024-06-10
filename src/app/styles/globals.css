@@ -3,8 +3,9 @@
   --contrastWhite: #171717;
   --greyBorder: #d1cece;
   --descriptionColor: #6b7280;
+  --disabled: rgba(0, 0, 0, 0.12);
   --white: #f9fafb;
-  --contastBackground: #9ca3af;
+  --contrastBackground: #9ca3af;
   --hoverBtn: #2563eb;
   --darkBlue: #032d97;
   --intenseBlue: #0110af;

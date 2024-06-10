@@ -6,30 +6,31 @@ import { rubik } from '@/app/fonts.ts';
 import { Metadata } from 'next';
 import Footer from '@/app/components/Footer.tsx';
 import '@/app/styles/globals.css';
-import Head from 'next/head';
 
 export const metadata: Metadata = {
   title: 'GSN Innovations',
   icons: '/favicon.ico',
-  description: 'Primera descripcion con metadata',
+  description:
+    'GSN Innovations is a web development group that specializes in creating modern, responsive, and user-friendly web applications.',
   authors: [{ name: 'GSN Innovations', url: '/' }],
   keywords: [
-    'WebApps',
-    'Argentina Development',
-    'Mobile First',
-    'Front-end',
-    'Back-end',
-    'Responsive design',
-    'HTML',
-    'CSS',
-    'JavaScript',
-    'TypeScript',
-    'Next.js',
-    'Node.js',
-    'MySql',
-    'MongoDB',
-    'Desarrollo Web',
-    'Web Development',
+    'webapps',
+    'argentina development',
+    'mobile First',
+    'front-end',
+    'back-end',
+    'responsive design',
+    'html',
+    'css',
+    'javascript',
+    'typeScript',
+    'next.js',
+    'react',
+    'node.js',
+    'mysql',
+    'mongodb',
+    'desarrollo web',
+    'web development',
   ],
 };
 export default async function LocaleLayout({
@@ -39,15 +40,10 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  // Providing all messages to the client
-  // side is the easiest way to get started
   const messages = await getMessages();
 
   return (
     <html lang={locale}>
-      <Head>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
       <body className={rubik.className}>
         <NextIntlClientProvider messages={messages}>
           <NavBar />

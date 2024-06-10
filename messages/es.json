@@ -48,6 +48,10 @@
     "subject":"Asunto",
     "message":"Mensaje",
     "pMessage":"Ingrese su mensaje",
-    "btn":"Enviar"
+    "btn":"Enviar",
+    "sending":"Enviando..."
+  },
+  "Footer":{
+    "text":"© 2024 GSN Innovations, Todos los derechos reservados."
   }
 }
