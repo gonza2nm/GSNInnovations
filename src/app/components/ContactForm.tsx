@@ -153,20 +153,3 @@ const ContactForm = () => {
 };
 
 export default ContactForm;
-/*const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
-    e.preventDefault();
-    const serviceId = process.env.NEXT_PUBLIC_SERVICE_ID_EMAILJS || '';
-    const templateId = process.env.NEXT_PUBLIC_TEMPLATE_ID_EMAILJS || '';
-    const apiKey = process.env.NEXT_PUBLIC_API_KEY_EMAILJS;
-
-    if (formRef.current) {
-      emailjs
-        .sendForm(serviceId, templateId, formRef.current, apiKey)
-        .then((result) => console.log(result.text))
-        .catch((error) => console.error(error));
-      console.log(templateId);
-      console.log(serviceId);
-    } else {
-      console.error('el formulario no esta disponible');
-    }
-  };*/
