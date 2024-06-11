@@ -58,7 +58,7 @@ const About = () => {
           <div className={styles.profile}>
             <Image
               className={styles.img_profile}
-              src={'/fotoCeleste.jpg'}
+              src={'/sixto.jpg'}
               alt=""
               width={'128'}
               height={'128'}

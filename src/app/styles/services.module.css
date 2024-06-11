@@ -61,13 +61,4 @@
   .title {
     font-size: 48px;
   }
-  .img {
-    transition: all 0.5s;
-  }
-  .strength_container > .img_title_container > .img {
-    filter: grayscale(100);
-  }
-  .strength_container:hover > .img_title_container > .img {
-    filter: grayscale(0);
-  }
 }
