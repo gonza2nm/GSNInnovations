@@ -3,6 +3,8 @@ import React, { useEffect, useRef, useState } from 'react';
 import styles from '@/app/styles/contact.module.css';
 import { useTranslations } from 'next-intl';
 import emailjs from '@emailjs/browser';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const apiKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
@@ -22,11 +24,17 @@ const formInitialValues: FormData = {
 };
 
 const ContactForm = () => {
-  const [disabled, setDisabled] = useState<boolean>(false);
   const t = useTranslations('Contact');
   const formRef = useRef<HTMLFormElement>(null);
-  const [isSending, setIsSending] = useState<boolean>(false);
   const [formData, setFormData] = useState<FormData>(formInitialValues);
+  const [isValidInput, setIsValidInput] = useState({
+    name: true,
+    email: true,
+    subject: true,
+    message: true,
+  });
+  const [disabled, setDisabled] = useState<boolean>(false);
+  const [isSending, setIsSending] = useState<boolean>(false);
 
   useEffect(() => {
     const isFormComplete = Object.values(formData).every(
@@ -43,6 +51,17 @@ const ContactForm = () => {
       ...formData,
       [name]: value,
     });
+    if (value === '') {
+      setIsValidInput({
+        ...isValidInput,
+        [name]: false,
+      });
+    } else {
+      setIsValidInput({
+        ...isValidInput,
+        [name]: true,
+      });
+    }
   };
 
   const sendEmail = async (event: React.FormEvent<HTMLFormElement>) => {
@@ -55,100 +74,123 @@ const ContactForm = () => {
           publicKey: apiKey,
         });
         setFormData(formInitialValues);
+        toast.success(t('success'), { autoClose: 5000 });
       } catch (error) {
         console.error(error);
+        toast.error(t('error'), { autoClose: 5000 });
       }
       setIsSending(false);
     }
   };
 
   return (
-    <form className={styles.form_container} ref={formRef} onSubmit={sendEmail}>
-      <div className={styles.input_grid}>
-        <div className={styles.noBorder}>
-          <label className={styles.label} htmlFor="name">
-            {t('name')}
-            <span className={styles.red}> *</span>
-          </label>
-          <input
-            onChange={handleChange}
-            value={formData.name}
-            autoComplete="name"
-            name="name"
-            className={styles.input}
-            id="name"
-            placeholder={t('pName')}
-            type="text"
-          />
+    <>
+      <form
+        className={styles.form_container}
+        ref={formRef}
+        onSubmit={sendEmail}
+      >
+        <div className={styles.input_grid}>
+          <div className={styles.noBorder}>
+            <label className={styles.label} htmlFor="name">
+              {t('name')}
+              <span className={styles.red}> *</span>
+            </label>
+            <input
+              onChange={handleChange}
+              value={formData.name}
+              autoComplete="name"
+              name="name"
+              className={
+                isValidInput.name === true ? styles.input : styles.invalid_input
+              }
+              id="name"
+              placeholder={t('pName')}
+              type="text"
+            />
+          </div>
+          <div className={styles.noBorder}>
+            <label className={styles.label} htmlFor="email">
+              {t('email')}
+              <span className={styles.red}> *</span>
+            </label>
+            <input
+              onChange={handleChange}
+              value={formData.email}
+              autoComplete="email"
+              name="email"
+              className={
+                isValidInput.email === true
+                  ? styles.input
+                  : styles.invalid_input
+              }
+              id="email"
+              type="email"
+              placeholder={t('pEmail')}
+            />
+          </div>
         </div>
-        <div className={styles.noBorder}>
-          <label className={styles.label} htmlFor="email">
-            {t('email')}
-            <span className={styles.red}> *</span>
-          </label>
-          <input
-            onChange={handleChange}
-            value={formData.email}
-            autoComplete="email"
-            name="email"
-            className={styles.input}
-            id="email"
-            type="email"
-            placeholder={t('pEmail')}
-          />
+        <div className={styles.email_container}>
+          <div className={styles.noBorder}>
+            <label className={styles.label} htmlFor="subject">
+              {t('subject')}
+              <span className={styles.red}> *</span>
+            </label>
+            <input
+              onChange={handleChange}
+              value={formData.subject}
+              autoComplete="off"
+              className={
+                isValidInput.subject === true
+                  ? styles.input
+                  : styles.invalid_input
+              }
+              name="subject"
+              id="subject"
+              type="text"
+              placeholder={t('subject')}
+            />
+          </div>
+          <div className={styles.noBorder}>
+            <label className={styles.label} htmlFor="message">
+              {t('message')}
+              <span className={styles.red}> *</span>
+            </label>
+            <textarea
+              onChange={handleChange}
+              value={formData.message}
+              name="message"
+              className={
+                isValidInput.message === true
+                  ? styles.textarea
+                  : styles.invalid_textarea
+              }
+              id="message"
+              rows={5}
+              placeholder={t('pMessage')}
+              autoComplete="off"
+            ></textarea>
+          </div>
         </div>
-      </div>
-      <div className={styles.email_container}>
-        <div className={styles.noBorder}>
-          <label className={styles.label} htmlFor="subject">
-            {t('subject')}
-            <span className={styles.red}> *</span>
-          </label>
-          <input
-            onChange={handleChange}
-            value={formData.subject}
-            autoComplete="off"
-            className={styles.input}
-            name="subject"
-            id="subject"
-            type="text"
-            placeholder={t('subject')}
-          />
+        <div className={styles.btn_container}>
+          <button
+            className={disabled ? styles.btnDisabled : styles.btn}
+            disabled={disabled || isSending}
+            type="submit"
+          >
+            {isSending ? (
+              <div className={styles.spinner_container}>
+                {t('sending')}
+                <div className={styles.spinner}></div>
+              </div>
+            ) : (
+              t('btn')
+            )}
+          </button>
         </div>
-        <div className={styles.noBorder}>
-          <label className={styles.label} htmlFor="message">
-            {t('message')}
-            <span className={styles.red}> *</span>
-          </label>
-          <textarea
-            onChange={handleChange}
-            value={formData.message}
-            name="message"
-            className={styles.textarea}
-            id="message"
-            rows={5}
-            placeholder={t('pMessage')}
-            autoComplete="off"
-          ></textarea>
-        </div>
-      </div>
-      <div className={styles.btn_container}>
-        <button
-          className={disabled || isSending ? styles.btnDisabled : styles.btn}
-          disabled={disabled || isSending}
-          type="submit"
-        >
-          {isSending ? (
-            <div className={styles.spinner_container}>
-              {t('sending')}
-              <div className={styles.spinner}></div>
-            </div>
-          ) : (
-            t('btn')
-          )}
-        </button>
-      </div>
-    </form>
+      </form>
+      <ToastContainer />
+    </>
   );
 };
 

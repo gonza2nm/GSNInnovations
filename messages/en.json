@@ -49,7 +49,9 @@
     "message":"Message",
     "pMessage":"Enter your message",
     "btn":"Submit",
-    "sending":"Sending..."
+    "sending":"Sending...",
+    "success":"Email sent successfully!!",
+    "error":"An error occurred while sending the email, please try again later"
   },
   "Footer":{
     "text":"© 2024 GSN Innovations, All rights reserved."
