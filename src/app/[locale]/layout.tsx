@@ -6,6 +6,7 @@ import { rubik } from '@/app/fonts.ts';
 import { Metadata } from 'next';
 import Footer from '@/app/components/Footer.tsx';
 import '@/app/styles/globals.css';
+import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata: Metadata = {
   title: 'GSN Innovations',
@@ -45,6 +46,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale}>
       <body className={rubik.className}>
+        <SpeedInsights />
         <NextIntlClientProvider messages={messages}>
           <NavBar />
           {children}
