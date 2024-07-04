@@ -1,7 +1,7 @@
 'use client';
 import { useTranslations } from 'next-intl';
 import { useState } from 'react';
-import styles from '@/app/styles/navbar.module.css';
+import styles from '..//styles/navbar.module.css';
 import MenuIcon from './icons/MenuIcon.tsx';
 import CloseMenu from './icons/CloseMenu.tsx';
 
