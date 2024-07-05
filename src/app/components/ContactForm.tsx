@@ -1,7 +1,6 @@
 'use client';
 import React, { useEffect, useRef, useState } from 'react';
 import styles from '@/app/styles/contact.module.css';
-import { useTranslations } from 'next-intl';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
@@ -24,7 +23,6 @@ const formInitialValues: FormData = {
 };
 
 const ContactForm = () => {
-  const t = useTranslations('Contact');
   const formRef = useRef<HTMLFormElement>(null);
   const [formData, setFormData] = useState<FormData>(formInitialValues);
   const [isValidInput, setIsValidInput] = useState({
@@ -66,7 +64,6 @@ const ContactForm = () => {
 
   const sendEmail = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
-    console.log('se ejecuto');
     if (apiKey && serviceId && templateId && formRef.current) {
       setIsSending(true);
       try {
@@ -74,10 +71,10 @@ const ContactForm = () => {
           publicKey: apiKey,
         });
         setFormData(formInitialValues);
-        toast.success(t('success'), { autoClose: 5000 });
+        toast.success('cambiar a success', { autoClose: 5000 });
       } catch (error) {
         console.error(error);
-        toast.error(t('error'), { autoClose: 5000 });
+        toast.error('cambiar a error', { autoClose: 5000 });
       }
       setIsSending(false);
     }
@@ -93,7 +90,7 @@ const ContactForm = () => {
         <div className={styles.input_grid}>
           <div className={styles.noBorder}>
             <label className={styles.label} htmlFor="name">
-              {t('name')}
+              {"t('name')"}
               <span className={styles.red}> *</span>
             </label>
             <input
@@ -105,13 +102,13 @@ const ContactForm = () => {
                 isValidInput.name === true ? styles.input : styles.invalid_input
               }
               id="name"
-              placeholder={t('pName')}
+              placeholder={"t('pName')"}
               type="text"
             />
           </div>
           <div className={styles.noBorder}>
             <label className={styles.label} htmlFor="email">
-              {t('email')}
+              {"t('email')"}
               <span className={styles.red}> *</span>
             </label>
             <input
@@ -126,14 +123,14 @@ const ContactForm = () => {
               }
               id="email"
               type="email"
-              placeholder={t('pEmail')}
+              placeholder={"t('pEmail')"}
             />
           </div>
         </div>
         <div className={styles.email_container}>
           <div className={styles.noBorder}>
             <label className={styles.label} htmlFor="subject">
-              {t('subject')}
+              {"t('subject')"}
               <span className={styles.red}> *</span>
             </label>
             <input
@@ -148,12 +145,12 @@ const ContactForm = () => {
               name="subject"
               id="subject"
               type="text"
-              placeholder={t('subject')}
+              placeholder={"t('subject')"}
             />
           </div>
           <div className={styles.noBorder}>
             <label className={styles.label} htmlFor="message">
-              {t('message')}
+              {"t('message')"}
               <span className={styles.red}> *</span>
             </label>
             <textarea
@@ -167,7 +164,7 @@ const ContactForm = () => {
               }
               id="message"
               rows={5}
-              placeholder={t('pMessage')}
+              placeholder={"t('pMessage')"}
               autoComplete="off"
             ></textarea>
           </div>
@@ -180,11 +177,11 @@ const ContactForm = () => {
           >
             {isSending ? (
               <div className={styles.spinner_container}>
-                {t('sending')}
+                {"t('sending')"}
                 <div className={styles.spinner}></div>
               </div>
             ) : (
-              t('btn')
+              " t('btn')"
             )}
           </button>
         </div>

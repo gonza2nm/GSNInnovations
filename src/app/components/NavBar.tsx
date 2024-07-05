@@ -1,5 +1,4 @@
 'use client';
-import { useTranslations } from 'next-intl';
 import { useState } from 'react';
 import styles from '../styles/NavBar.module.css';
 import MenuIcon from './icons/MenuIcon.tsx';
@@ -7,7 +6,6 @@ import CloseMenu from './icons/CloseMenu.tsx';
 
 const NavBar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const t = useTranslations('NavBar');
   return (
     <header id={styles.header}>
       <nav className={`${styles.nav} ${isOpen ? styles.nav_open : ''}`}>
@@ -35,7 +33,7 @@ const NavBar = () => {
                 setIsOpen(false);
               }}
             >
-              {t('about')}
+              {"t('about')"}
             </a>
           </li>
           <li className={styles.li_links}>
@@ -46,7 +44,7 @@ const NavBar = () => {
                 setIsOpen(false);
               }}
             >
-              {t('services')}
+              {"t('services')"}
             </a>
           </li>
           {/*<li className={styles.li_links}>
@@ -68,7 +66,7 @@ const NavBar = () => {
               }}
             >
               <button className={styles.btn} type="button">
-                {t('main_button')}
+                {"t('main_button')"}
               </button>
             </a>
           </li>

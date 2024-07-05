@@ -22,11 +22,9 @@ const ImgSlider = ({ className, width, height }: ImgSliderProps) => {
   }, []);
 
   return (
-    <Image
-      priority
+    <img
       src={imagenesSVG[inidiceActual]}
-      alt={`Image`}
-      className={className}
+      alt="Image"
       width={width}
       height={height}
     />

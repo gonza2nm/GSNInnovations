@@ -1,12 +1,9 @@
-import { NextIntlClientProvider } from 'next-intl';
-import { getMessages } from 'next-intl/server';
 import NavBar from '@/app/components/NavBar.tsx';
 import '@/app/styles/globals.css';
 import { rubik } from '@/app/fonts.ts';
 import { Metadata } from 'next';
 import Footer from '@/app/components/Footer.tsx';
 import '@/app/styles/globals.css';
-import { SpeedInsights } from '@vercel/speed-insights/next';
 
 export const metadata: Metadata = {
   title: 'GSN Innovations',
@@ -41,17 +38,12 @@ export default async function LocaleLayout({
   children: React.ReactNode;
   params: { locale: string };
 }) {
-  const messages = await getMessages();
-
   return (
     <html lang={locale}>
       <body className={rubik.className}>
-        <SpeedInsights />
-        <NextIntlClientProvider messages={messages}>
-          <NavBar />
-          {children}
-          <Footer />
-        </NextIntlClientProvider>
+        <NavBar />
+        {children}
+        <Footer />
       </body>
     </html>
   );

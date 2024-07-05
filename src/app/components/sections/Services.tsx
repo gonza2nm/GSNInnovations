@@ -1,18 +1,17 @@
-import { useTranslations } from 'next-intl';
-import Image from 'next/image';
 import React from 'react';
 import { gabarito } from '@/app/fonts.ts';
 import styles from '@/app/styles/services.module.css';
 
 const Services = () => {
-  const t = useTranslations('Services');
   return (
     <section id="services" className={styles.services_container}>
-      <h2 className={`${gabarito.className} ${styles.title}`}>{t('title')}</h2>
+      <h2 className={`${gabarito.className} ${styles.title}`}>
+        {"t('title')"}
+      </h2>
       <div className={styles.general_container}>
         <div className={`${styles.strength_container} ${styles.bg_container}`}>
           <div className={styles.img_title_container}>
-            <Image
+            <img
               className={styles.img}
               src={'/dpwa.svg'}
               width={250}
@@ -20,14 +19,14 @@ const Services = () => {
               alt="Custom Web Application Development image"
             />
             <h3 className={`${gabarito.className} ${styles.title_s}`}>
-              {t('strengths1')}
+              {"t('strengths1')"}
             </h3>
           </div>
-          <p className={styles.desc}>{t('desciption1')}</p>
+          <p className={styles.desc}>{"t('desciption1')"}</p>
         </div>
         <div className={styles.strength_container}>
           <div className={styles.img_title_container}>
-            <Image
+            <img
               className={styles.img}
               src={'/design.svg'}
               width={250}
@@ -35,14 +34,14 @@ const Services = () => {
               alt="Web Application Design image"
             />
             <h3 className={`${gabarito.className} ${styles.title_s}`}>
-              {t('strengths2')}
+              {"t('strengths2')"}
             </h3>
-            <p className={styles.desc}>{t('desciption2')}</p>
+            <p className={styles.desc}>{"t('desciption2')"}</p>
           </div>
         </div>
         <div className={`${styles.strength_container} ${styles.bg_container}`}>
           <div className={styles.img_title_container}>
-            <Image
+            <img
               className={styles.img}
               src={'/maintenance.svg'}
               width={250}
@@ -50,10 +49,10 @@ const Services = () => {
               alt="Web Application Maintenance image"
             />
             <h3 className={`${gabarito.className} ${styles.title_s}`}>
-              {t('strengths3')}
+              {"t('strengths3')"}
             </h3>
           </div>
-          <p className={styles.desc}>{t('desciption3')}</p>
+          <p className={styles.desc}>{"t('desciption3')"}</p>
         </div>
       </div>
     </section>
