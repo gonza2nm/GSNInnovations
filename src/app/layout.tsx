@@ -1,9 +1,9 @@
-import NavBar from '@/app/components/NavBar.tsx';
-import '@/app/styles/globals.css';
+import NavBar from '@/app/components/navbar/NavBar.tsx';
+import '@/app/globals.css';
 import { rubik } from '@/app/fonts.ts';
 import { Metadata } from 'next';
-import Footer from '@/app/components/Footer.tsx';
-import '@/app/styles/globals.css';
+import Footer from '@/app/components/footer/Footer';
+import i18n from 'i18next';
 
 export const metadata: Metadata = {
   title: 'GSN Innovations',
@@ -33,13 +33,11 @@ export const metadata: Metadata = {
 };
 export default async function LocaleLayout({
   children,
-  params: { locale },
 }: {
   children: React.ReactNode;
-  params: { locale: string };
 }) {
   return (
-    <html lang={locale}>
+    <html lang="en">
       <body className={rubik.className}>
         <NavBar />
         {children}

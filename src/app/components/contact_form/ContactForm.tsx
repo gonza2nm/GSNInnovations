@@ -1,9 +1,10 @@
 'use client';
 import React, { useEffect, useRef, useState } from 'react';
-import styles from '@/app/styles/contact.module.css';
+import styles from '@/app/components/sections/contact/contact.module.css';
 import emailjs from '@emailjs/browser';
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import { useTranslation } from 'react-i18next';
 
 const apiKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
 const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
@@ -33,6 +34,7 @@ const ContactForm = () => {
   });
   const [disabled, setDisabled] = useState<boolean>(false);
   const [isSending, setIsSending] = useState<boolean>(false);
+  const { t } = useTranslation('translation', { keyPrefix: 'Contact' });
 
   useEffect(() => {
     const isFormComplete = Object.values(formData).every(
@@ -90,7 +92,7 @@ const ContactForm = () => {
         <div className={styles.input_grid}>
           <div className={styles.noBorder}>
             <label className={styles.label} htmlFor="name">
-              {"t('name')"}
+              {t('name')}
               <span className={styles.red}> *</span>
             </label>
             <input
@@ -102,13 +104,13 @@ const ContactForm = () => {
                 isValidInput.name === true ? styles.input : styles.invalid_input
               }
               id="name"
-              placeholder={"t('pName')"}
+              placeholder={t('pName')}
               type="text"
             />
           </div>
           <div className={styles.noBorder}>
             <label className={styles.label} htmlFor="email">
-              {"t('email')"}
+              {t('email')}
               <span className={styles.red}> *</span>
             </label>
             <input
@@ -123,14 +125,14 @@ const ContactForm = () => {
               }
               id="email"
               type="email"
-              placeholder={"t('pEmail')"}
+              placeholder={t('pEmail')}
             />
           </div>
         </div>
         <div className={styles.email_container}>
           <div className={styles.noBorder}>
             <label className={styles.label} htmlFor="subject">
-              {"t('subject')"}
+              {t('subject')}
               <span className={styles.red}> *</span>
             </label>
             <input
@@ -145,12 +147,12 @@ const ContactForm = () => {
               name="subject"
               id="subject"
               type="text"
-              placeholder={"t('subject')"}
+              placeholder={t('subject')}
             />
           </div>
           <div className={styles.noBorder}>
             <label className={styles.label} htmlFor="message">
-              {"t('message')"}
+              {t('message')}
               <span className={styles.red}> *</span>
             </label>
             <textarea
@@ -164,7 +166,7 @@ const ContactForm = () => {
               }
               id="message"
               rows={5}
-              placeholder={"t('pMessage')"}
+              placeholder={t('pMessage')}
               autoComplete="off"
             ></textarea>
           </div>
@@ -177,11 +179,11 @@ const ContactForm = () => {
           >
             {isSending ? (
               <div className={styles.spinner_container}>
-                {"t('sending')"}
+                {t('sending')}
                 <div className={styles.spinner}></div>
               </div>
             ) : (
-              " t('btn')"
+              t('btn')
             )}
           </button>
         </div>

@@ -74,6 +74,7 @@
 }
 .link {
   color: var(--contrastWhite);
+  cursor: pointer;
 }
 .link:hover {
   border-bottom: 1px solid var(--contrastWhite);
@@ -96,8 +97,16 @@
 .menu_btn {
   cursor: pointer;
 }
+.menu_btn_container {
+  display: flex;
+}
+.menu_btn_container .switch {
+  @media (max-width: 415px) {
+    display: none;
+  }
+}
 
-@media (min-width: 768px) {
+@media (min-width: 910px) {
   #header {
     padding: 0 24px;
   }
@@ -123,6 +132,7 @@
     align-self: center;
   }
   .link {
+    cursor: pointer;
     color: var(--white);
     font-size: 16px;
   }
