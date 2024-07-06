@@ -26,7 +26,7 @@ const Home = () => {
         </div>
       </div>
       <div className={styles.img_container}>
-        <ImgSlider className={styles.img} width={650} height={650} />
+        <ImgSlider className={styles.img} />
       </div>
     </section>
   );

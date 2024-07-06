@@ -48,6 +48,8 @@
   color: var(--white);
 }
 .img {
+  width: 250px;
+  height: 250px;
   @media (max-width: 382px) {
     width: 150px;
     height: 150px;

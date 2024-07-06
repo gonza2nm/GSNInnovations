@@ -23,8 +23,6 @@ const About = () => {
               className={styles.img_profile}
               src={'/gonza.jpg'}
               alt="profile"
-              width={'128'}
-              height={'128'}
             />
             <div className={styles.data_profile}>
               <div className={styles.name}>Gonzalo Mansilla</div>
@@ -58,9 +56,7 @@ const About = () => {
             <img
               className={styles.img_profile}
               src={'/sixto.jpg'}
-              alt=""
-              width={'128'}
-              height={'128'}
+              alt="profile"
             />
             <div className={styles.data_profile}>
               <div className={styles.name}>Sixto Cabrera</div>

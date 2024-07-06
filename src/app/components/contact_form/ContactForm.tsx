@@ -73,10 +73,10 @@ const ContactForm = () => {
           publicKey: apiKey,
         });
         setFormData(formInitialValues);
-        toast.success('cambiar a success', { autoClose: 5000 });
+        toast.success(t('success'), { autoClose: 5000 });
       } catch (error) {
         console.error(error);
-        toast.error('cambiar a error', { autoClose: 5000 });
+        toast.error(t('error'), { autoClose: 5000 });
       }
       setIsSending(false);
     }

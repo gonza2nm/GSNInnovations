@@ -13,8 +13,6 @@ const Services = () => {
             <img
               className={styles.img}
               src={'/dpwa.svg'}
-              width={250}
-              height={250}
               alt="Custom Web Application Development image"
             />
             <h3 className={`${gabarito.className} ${styles.title_s}`}>
@@ -28,8 +26,6 @@ const Services = () => {
             <img
               className={styles.img}
               src={'/design.svg'}
-              width={250}
-              height={250}
               alt="Web Application Design image"
             />
             <h3 className={`${gabarito.className} ${styles.title_s}`}>
@@ -43,8 +39,6 @@ const Services = () => {
             <img
               className={styles.img}
               src={'/maintenance.svg'}
-              width={250}
-              height={250}
               alt="Web Application Maintenance image"
             />
             <h3 className={`${gabarito.className} ${styles.title_s}`}>
