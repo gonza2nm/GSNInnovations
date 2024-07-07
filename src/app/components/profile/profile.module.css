@@ -1,0 +1,79 @@
+.profile {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+  align-items: center;
+  padding: 24px;
+  gap: 14px;
+  border-radius: 10px;
+  border: 1px solid var(--greyBorder);
+}
+.img_profile {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+.data_profile {
+  padding-top: 10px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.name {
+  font-size: 18px;
+  color: var(--contrastWhite);
+  font-weight: bold;
+}
+.profesion {
+  padding-top: 6px;
+  color: #6b7280;
+  font-size: 16px;
+}
+.contact_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+.btn_contact_container,
+.btn_in_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 8px 16px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+.btn_contact_container {
+  background-color: var(--backgroundColor);
+}
+.btn_contact_container:hover {
+  background-color: #1e2941;
+}
+.btn_contact,
+.btn_linkedin {
+  text-decoration: none;
+}
+.btn_contact {
+  color: var(--white);
+}
+.btn_linkedin {
+  color: var(--backgroundColor);
+}
+.btn_in_container {
+  border: 1px solid var(--greyBorder);
+}
+.svg {
+  margin: 0 8px 0 0;
+}
+
+@media (min-width: 768px) {
+  .profile {
+    min-width: max-content;
+  }
+  .contact_container {
+    margin-top: 10px;
+    flex-direction: row;
+  }
+}
