@@ -5,7 +5,13 @@ type ImgSliderProps = {
   className: string;
 };
 
-const imagenesSVG = ['/m1.svg', '/m2.svg', '/m3.svg', '/m4.svg'];
+const imagenesSVG = [
+  '/img1.svg',
+  '/img2.svg',
+  '/img3.svg',
+  '/img4.svg',
+  'img5.svg',
+];
 
 const ImgSlider = ({ className }: ImgSliderProps) => {
   const [inidiceActual, setIndiceActual] = useState(0);
@@ -14,7 +20,7 @@ const ImgSlider = ({ className }: ImgSliderProps) => {
       setIndiceActual(
         (indiceActual) => (indiceActual + 1) % imagenesSVG.length
       );
-    }, 5000);
+    }, 3000);
     return () => clearInterval(intervalo); // Limpia el intervalo al desmontar el componente
   }, []);
 
