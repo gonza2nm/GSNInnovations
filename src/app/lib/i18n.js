@@ -4,7 +4,7 @@ import english from '../../../public/locales/en.json';
 import spanish from '../../../public/locales/es.json';
 
 i18n.use(initReactI18next).init({
-  fallbackLng: 'en',
+  fallbackLng: 'es',
   debug: false,
   resources: {
     en: {

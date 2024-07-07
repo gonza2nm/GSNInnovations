@@ -89,8 +89,8 @@ const NavBar = () => {
           </li>*/}
           <Switch
             menuOpen={isOpen}
-            notCheckedString="EN"
-            checkedString="ES"
+            notCheckedString="ES"
+            checkedString="EN"
             handleToogle={handleToogle}
             isOn={isOn}
           />
@@ -111,8 +111,8 @@ const NavBar = () => {
           <div className={styles.switch}>
             <Switch
               menuOpen={isOpen}
-              notCheckedString="EN"
-              checkedString="ES"
+              notCheckedString="ES"
+              checkedString="EN"
               handleToogle={handleToogle}
               isOn={isOn}
             />

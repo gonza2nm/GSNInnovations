@@ -41,7 +41,7 @@ export default async function LocaleLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body className={rubik.className}>
         <NavBar />
         {children}
