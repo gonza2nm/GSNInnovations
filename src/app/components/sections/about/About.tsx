@@ -31,12 +31,12 @@ const About = () => {
       intervaloRef.current = null;
     }
   };
-
+  // control de click en los circulos
   const handleDotClick = (index: number) => {
     pausarIntervalo();
     setIndiceActual(index);
   };
-
+  //posiciones del puntero
   let touchStartX = 0;
   let touchEndX = 0;
 
@@ -49,16 +49,15 @@ const About = () => {
     handleSwipeGesture();
   };
 
+  //control de toques del slider
   const handleSwipeGesture = () => {
     const minSwipeDistance = 60; // Distancia mínima para considerar el deslizamiento válido
     const distance = touchEndX - touchStartX;
 
-    if (distance < -minSwipeDistance) {
-      // Deslizó hacia la izquierda
+    if (distance < -minSwipeDistance || distance > minSwipeDistance) {
       setIndiceActual(1 - indiceActual);
-    } else if (distance > minSwipeDistance) {
-      // Deslizó hacia la derecha
-      setIndiceActual(1 - indiceActual);
+      pausarIntervalo();
+      iniciarIntervalo();
     }
   };
 

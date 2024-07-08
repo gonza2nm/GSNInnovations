@@ -5,34 +5,38 @@ import { Metadata } from 'next';
 import Footer from '@/app/components/footer/Footer';
 
 export const metadata: Metadata = {
-  title: 'GSN Innovations',
-  icons: '/favicon.ico',
+  title: 'GSN Innovations: Desarrollo Web Apps Argentina',
+  openGraph: {
+    locale: 'es-AR',
+    alternateLocale: ['es-ES', 'en-US', 'en-GB'],
+    title: 'GSN Innovations: Desarrollo Web Apps',
+    siteName: 'GSN Innovations: Desarrollo Web Apps',
+    description:
+      'GSN Innovations es un grupo especializado en crear aplicaciones web modernas y fáciles de usar en Argentina. Escuchamos, entendemos y solucionamos tus desafíos de software.',
+    url: 'https://www.gsninnovations.com',
+    images: [
+      {
+        url: 'https://www.gsninnovations.com/logo.jpg',
+        width: 500,
+        height: 500,
+        alt: 'GSN Innovations Logo',
+      },
+    ],
+
+    type: 'website',
+  },
+  icons: 'https://gsninnovations.com/favicon.ico',
   description:
-    'GSN Innovations is a web development group that specializes in creating modern, responsive, and user-friendly web applications.',
+    'GSN Innovations es un grupo especializado en crear aplicaciones web modernas y fáciles de usar en Argentina. Escuchamos, entendemos y solucionamos tus desafíos de software.',
   authors: [{ name: 'GSN Innovations', url: 'https://www.gsninnovations.com' }],
   keywords: [
     'GSN Innovations',
-    'web development Argentina',
+    'desarrollo de aplicaciones web Argentina',
+    'aplicaciones web Argentina',
+    'servicios de desarrollo web en Argentina',
+    'web development',
     'modern web applications',
-    'responsive web development',
-    'expert web development team',
-    'web development technologies',
-    'TypeScript',
-    'JavaScript',
-    'Google Cloud',
-    'Next.js',
-    'React',
-    'HTML',
-    'CSS',
-    'Node.js',
-    'MongoDB',
-    'MySQL',
-    'web development expertise',
-    'custom web solutions',
-    'user-centered web design',
-    'intuitive web solutions',
-    'high-quality web development',
-    'exceptional customer service',
+    'custom web app solutions',
   ],
 };
 export default async function LocaleLayout({
