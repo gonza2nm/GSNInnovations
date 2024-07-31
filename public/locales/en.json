@@ -1,60 +1,61 @@
 {
-  "NavBar":{
-    "home":"Home",
-    "about":"About Us",
+  "NavBar": {
+    "home": "Home",
+    "about": "About Us",
     "portfolio": "Portfolio",
-    "services":"Our Sevices",
-    "main_button":"Contact Us"
+    "services": "Our Sevices",
+    "main_button": "Contact Us"
   },
-  "Home":{
-    "slogan":"We Listen, We Understand and We Solve Your Software Challenges",
-    "description":"GSN Innovations is a software development group that specializes in creating modern, responsive, and user-friendly web applications.",
-    "first_btn":"Contact Us",
-    "second_btn":"View Portfolio"
+  "Home": {
+    "slogan": "We Listen, We Understand and We Solve Your Software Challenges",
+    "description": "GSN Innovations is a software development group that specializes in creating modern, responsive, and user-friendly web applications.",
+    "first_btn": "Contact Us",
+    "second_btn": "View Portfolio"
   },
-  "About":{
-    "section":"About Us",
-    "title":"Who We Are",
-    "profesionS":"Back-end Developer",
-    "profesionG":"Front-end Developer",
-    "description":"GSN Innovations is a web development group from Argentina, specialized in creating modern, responsive and easy-to-use web applications. Our team of experts is passionate about using the latest technologies to deliver exceptional results to our clients.",
-    "title1":"Expertise",
-    "description1":"Our team has extensive experience in web development, using technologies like Typescript, Javascript, Google Cloud, Next.js, React, HTML, CSS, Node.js, MongoDB, and MySQL.",
-    "title2":"Approach",
-    "description2":"We follow a user-centric approach, focusing on creating intuitive and engaging user experiences. Our process involves close collaboration with our clients to ensure we deliver solutions that meet their unique needs.", 
-    "title3":"Commitment",
-    "description3":"We are committed to delivering high-quality work and providing exceptional customer service. Our goal is to build long-term partnerships with our clients and help them achieve their business objectives."
+  "About": {
+    "section": "About Us",
+    "title": "Who We Are",
+    "profesionS": "Back-end Developer",
+    "profesionG": "Front-end Developer",
+    "description": "GSN Innovations is a web development group from Argentina, specialized in creating modern, responsive and easy-to-use web applications. Our team of experts is passionate about using the latest technologies to deliver exceptional results to our clients.",
+    "title1": "Expertise",
+    "description1": "Our team has extensive experience in web development, using technologies like Typescript, Javascript, Google Cloud, Next.js, React, HTML, CSS, Node.js, MongoDB, and MySQL.",
+    "title2": "Approach",
+    "description2": "We follow a user-centric approach, focusing on creating intuitive and engaging user experiences. Our process involves close collaboration with our clients to ensure we deliver solutions that meet their unique needs.",
+    "title3": "Commitment",
+    "description3": "We are committed to delivering high-quality work and providing exceptional customer service. Our goal is to build long-term partnerships with our clients and help them achieve their business objectives.",
+    "tecnologies": "Tecnologies"
   },
-  "Services":{
-    "title":"Our Services",
-    "description":"GSN Innovations offers a wide range of web application development services to help our clients achieve their goals. From custom web application development to website design and maintenance, we have the expertise to deliver exceptional results.",
-    "strengths1":"Custom Web Application Development",
-    "desciption1":"We build custom web applications tailored to your specific needs, using the latest technologies and best practices.",
-    "strengths2":"Web Application Design",
-    "desciption2":"Our team of designers create visually appealing and user-friendly designs that enhance the overall user experience.",
-    "strengths3":"Web Application Maintenance",
-    "desciption3":"We provide ongoing maintenance and support to ensure your web application remains up-to-date, secure, and optimized for performance."           
+  "Services": {
+    "title": "Our Services",
+    "description": "GSN Innovations offers a wide range of web application development services to help our clients achieve their goals. From custom web application development to website design and maintenance, we have the expertise to deliver exceptional results.",
+    "strengths1": "Custom Web Application Development",
+    "desciption1": "We build custom web applications tailored to your specific needs, using the latest technologies and best practices.",
+    "strengths2": "Web Application Design",
+    "desciption2": "Our team of designers create visually appealing and user-friendly designs that enhance the overall user experience.",
+    "strengths3": "Web Application Maintenance",
+    "desciption3": "We provide ongoing maintenance and support to ensure your web application remains up-to-date, secure, and optimized for performance."
   },
-  "Portfolio":{
-    "title":"Our Portfolio",
-    "description":"Check out some of the web applications we've developed for our clients."
+  "Portfolio": {
+    "title": "Our Portfolio",
+    "description": "Check out some of the web applications we've developed for our clients."
   },
-  "Contact":{
-    "title":"Get in Touch",
-    "description":"Have a web application project in mind? Let's discuss how we can help. Fill out the form below and one of our team members will get back to you.",
-    "name":"Name",
-    "pName":"Enter your name",
-    "email":"Email",
-    "pEmail":"Enter your email",
-    "subject":"Subject",
-    "message":"Message",
-    "pMessage":"Enter your message",
-    "btn":"Submit",
-    "sending":"Sending...",
-    "success":"Email sent successfully!!",
-    "error":"An error occurred while sending the email, please try again later"
+  "Contact": {
+    "title": "Get in Touch",
+    "description": "Have a web application project in mind? Let's discuss how we can help. Fill out the form below and one of our team members will get back to you.",
+    "name": "Name",
+    "pName": "Enter your name",
+    "email": "Email",
+    "pEmail": "Enter your email",
+    "subject": "Subject",
+    "message": "Message",
+    "pMessage": "Enter your message",
+    "btn": "Submit",
+    "sending": "Sending...",
+    "success": "Email sent successfully!!",
+    "error": "An error occurred while sending the email, please try again later"
   },
-  "Footer":{
-    "text":"© 2024 GSN Innovations, All rights reserved."
+  "Footer": {
+    "text": "© 2024 GSN Innovations, All rights reserved."
   }
 }

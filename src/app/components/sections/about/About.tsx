@@ -120,12 +120,6 @@ const About = () => {
         <div className={styles.info_container}>
           <div className={styles.partition_info}>
             <h3 className={`${gabarito.className} ${styles.p_title}`}>
-              {t('title1')}
-            </h3>
-            <p className={styles.p_desc}>{t('description1')}</p>
-          </div>
-          <div className={styles.partition_info}>
-            <h3 className={`${gabarito.className} ${styles.p_title}`}>
               {t('title2')}
             </h3>
             <p className={styles.p_desc}>{t('description2')}</p>
@@ -136,7 +130,60 @@ const About = () => {
             </h3>
             <p className={styles.p_desc}>{t('description3')}</p>
           </div>
+          <div className={styles.partition_info}>
+            <h3 className={`${gabarito.className} ${styles.p_title}`}>
+              {t('title1')}
+            </h3>
+            <p className={styles.p_desc}>{t('description1')}</p>
+          </div>
         </div>
+                  <div className={`${styles.partition_info_brands} ${styles.div_center}`}>
+            <h3 className={`${gabarito.className} ${styles.p_title} ${styles.p_title_center}`}>
+              {t('tecnologies')}
+            </h3>
+            <div className={styles.brands_container}>
+              <img
+                className={styles.img}
+                src={'/react_brand.svg'}
+                alt="React"
+              />
+              <img
+                className={styles.img}
+                src={'/nodejs_brand.svg'}
+                alt="NodeJS"
+              />
+              <img
+                className={styles.img}
+                src={'/mysql_brand.svg'}
+                alt="MySQL"
+              />
+              <img
+                className={styles.img}
+                src={'/mongodb_brand.svg'}
+                alt="MongoDB"
+              /> 
+              <img
+                className={styles.img}
+                src={'/html5_brand.svg'}
+                alt="HTML5"
+              />
+              <img
+                className={styles.img}
+                src={'/js_brand.svg'}
+                alt="JavaScript"
+              />
+              <img
+                className={styles.img}
+                src={'/google_cloud_brand.svg'}
+                alt="Google Cloud"
+              />
+              <img
+                className={styles.img}
+                src={'/css3_brand.svg'}
+                alt="CSS3"
+              />                          
+            </div>
+          </div>
       </div>
     </section>
   );

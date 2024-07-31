@@ -22,13 +22,21 @@ export const metadata: Metadata = {
         alt: 'GSN Innovations Logo',
       },
     ],
-
     type: 'website',
   },
-  icons: 'https://gsninnovations.com/favicon.ico',
+  icons: 'https://www.gsninnovations.com/favicon.ico',
   description:
     'GSN Innovations es un grupo especializado en crear aplicaciones web modernas y fáciles de usar en Argentina. Escuchamos, entendemos y solucionamos tus desafíos de software.',
   authors: [{ name: 'GSN Innovations', url: 'https://www.gsninnovations.com' }],
+  twitter: {
+    card: 'summary_large_image', // Tipo de tarjeta de Twitter, puedes ajustar según sea necesario
+    site: '@gsninnovations',
+    creator: '@gsninnovations',
+    title: 'GSN Innovations: Desarrollo Web Apps',
+    description:
+      'GSN Innovations es un grupo especializado en crear aplicaciones web modernas y fáciles de usar en Argentina. Escuchamos, entendemos y solucionamos tus desafíos de software.',
+    images:["https://www.gsninnovations.com/logo.jpg"],
+  },
   keywords: [
     'GSN Innovations',
     'desarrollo de aplicaciones web Argentina',
