@@ -1,0 +1,11 @@
+.img{
+  width: 90px;
+  height: 90px;
+  object-fit: contain;
+  padding: 10px;
+  border-radius: 12px;
+  transition: all 0.3s;
+}
+.img:hover{
+  background-color: var(--greyBorder);
+}

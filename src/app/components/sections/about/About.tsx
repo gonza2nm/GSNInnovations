@@ -4,6 +4,7 @@ import { gabarito } from '@/app/fonts.ts';
 import styles from '@/app/components/sections/about/about.module.css';
 import { useTranslation } from 'react-i18next';
 import Profile from '../../profile/Profile.tsx';
+import Brand_img from '../../brand_img/Brand_img.tsx';
 
 const About = () => {
   const { t } = useTranslation('translation', { keyPrefix: 'About' });
@@ -142,46 +143,46 @@ const About = () => {
               {t('tecnologies')}
             </h3>
             <div className={styles.brands_container}>
-              <img
-                className={styles.img}
-                src={'/react_brand.svg'}
-                alt="React"
+              <Brand_img
+                src='/react_brand.svg'
+                alt='React'
               />
-              <img
-                className={styles.img}
-                src={'/nodejs_brand.svg'}
-                alt="NodeJS"
+              <Brand_img
+                src='/nodejs_brand.svg'
+                alt='NodeJS'
               />
-              <img
-                className={styles.img}
-                src={'/mysql_brand.svg'}
+              <Brand_img
+                src='/mysql_brand.svg'
                 alt="MySQL"
               />
-              <img
-                className={styles.img}
-                src={'/mongodb_brand.svg'}
+              <Brand_img
+                src='/mongodb_brand.svg'
                 alt="MongoDB"
               /> 
-              <img
-                className={styles.img}
-                src={'/html5_brand.svg'}
+              <Brand_img
+                src='/html5_brand.svg'
                 alt="HTML5"
               />
-              <img
-                className={styles.img}
-                src={'/js_brand.svg'}
+              <Brand_img
+                src='/js_brand.svg'
                 alt="JavaScript"
               />
-              <img
-                className={styles.img}
-                src={'/google_cloud_brand.svg'}
+              <Brand_img
+                src='/google_cloud_brand.svg'
                 alt="Google Cloud"
               />
-              <img
-                className={styles.img}
-                src={'/css3_brand.svg'}
+              <Brand_img
+                src='/css3_brand.svg'
                 alt="CSS3"
-              />                          
+              />
+              <Brand_img
+                src='/ts_brand.svg'
+                alt="Typescript"
+              />
+              <Brand_img
+                src='/nextjs_brand.svg'
+                alt="NextJS"
+              />                           
             </div>
           </div>
       </div>

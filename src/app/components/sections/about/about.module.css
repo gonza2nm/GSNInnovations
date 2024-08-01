@@ -107,11 +107,6 @@
     flex-direction: row;
   }
 }
-.img{
-  width: 80px;
-  height: 80px;
-  object-fit: contain;
-}
 .p_title_center{
   text-align: center;
 }
@@ -121,7 +116,7 @@
   flex-wrap: wrap;
   align-items: center;
   justify-content: center;
-  gap:30px
+  gap:70px
 }
 
 @media (min-width: 768px) {
