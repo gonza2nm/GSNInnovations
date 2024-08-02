@@ -161,4 +161,8 @@
   .div_center{
     align-items: center;
   }
+  .p_title {
+  font-size: 30px;
+  color: var(--contrastWhite);
+}
 }

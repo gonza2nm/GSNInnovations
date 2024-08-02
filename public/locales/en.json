@@ -56,6 +56,7 @@
     "error": "An error occurred while sending the email, please try again later"
   },
   "Footer": {
+    "company_name": "GSN Innovations",
     "text": "© 2024 GSN Innovations, All rights reserved."
   }
 }
